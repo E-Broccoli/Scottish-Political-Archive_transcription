@@ -1,0 +1,77 @@
+<div class="row">
+  <div class="col-md-12">
+    <div id="modal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal header -->
+          <div class="modal-header">
+            <h3>How to transcribe the 2014 Referendum Leaflets</h3>
+          </div>
+
+          <!-- Step 1 of the tutorial -->
+          <div id="0" class="modal-body" style="display:none">
+            <img src="http://www.scottishpoliticalarchive.org.uk/wp-content/uploads/2017/02/spalogocmykpaths-290x300.png" class="pull-right"/>
+              <p>
+                  This is a very simple application for the crowd-sourcing of data from the yes and no groups leafelts for the 2014 Scottish Referendum.
+                  This project is on behalf of the Scottish Political Archive, housed at the University of Stirling.
+                  Within this project, all we need is the content of the leaflet to be transcribed and the presence of graphic
+                  elements to be annotated and described.
+                </p>
+
+            </div>
+
+            <!-- Step 2 of the tutorial -->
+            <div id="1" class="modal-body" style="display:none">
+              <p>
+                The fields we would like you to transcribe are:
+              </p>
+              <ul>
+                <li>The body of the leaflet</li>
+                <li>The precence of graphic elements</li>
+                <li>Comments</li>
+              </ul>
+              <p>
+                  That seems simple!
+              </p>
+            </div>
+
+            <!-- End of stepped modal body -->
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <a id="prevBtn" href="#" onclick="showStep('prev')" class="btn btn-default">Previous</a>
+              <a id="nextBtn" href="#" onclick="showStep('next')" class="btn btn-success">Next</a>
+              <a id="startContrib" data-dismiss="modal" href="../hayleysletters/newtask" class="btn btn-primary"
+              style="display:none"/><i class="glyphicon glyphicon-thumbs-up"></i> Let's start!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var step = -1;
+    function showStep(action) {
+      $("#" + step).hide();
+      if (action == 'next') {
+        step = step + 1;
+      }
+      if (action == 'prev') {
+        step = step - 1;
+      }
+      if (step == 0) {
+        $("#prevBtn").hide();
+      }
+      else {
+        $("#prevBtn").show();
+      }
+      if (step == 2 ) {
+        $("#nextBtn").hide();
+        $("#startContrib").show();
+      }
+      $("#" + step).show();
+    }
+    showStep('next');
+    $("#modal").modal('show');
+  </script>
