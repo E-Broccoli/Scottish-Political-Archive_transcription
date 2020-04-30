@@ -8,5 +8,5 @@ We would like your help with transcribing the content of the leaflets and annota
 
 ## This project is on behalf of:
 
-[![SPA logo] (http://www.scottishpoliticalarchive.org.uk/wp-content/uploads/2017/02/spalogocmykpaths-290x300.png)](http://www.scottishpoliticalarchive.org.uk/)
-[![Stirling logo] (https://www.stir.ac.uk/webcomponents/dist/css/images/logos/logo.svg)](https://www.stir.ac.uk/)
+[![SPA logo] (https://blog.micropasts.org/wp-content/uploads/2020/04/SPA_logo-e1588241476672.png)](http://www.scottishpoliticalarchive.org.uk/)
+[![Stirling logo] (https://blog.micropasts.org/wp-content/uploads/2020/04/UnivStirling_logo-e1588241230773.png)](https://www.stir.ac.uk/)
